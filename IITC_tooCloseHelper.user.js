@@ -72,6 +72,7 @@ window.addTestPoint40m = function(){
 }
 
 window.addCustomPoint = function( coord, meter, options ){
+	console.info(coord);
 	var c = L.circle( coord, meter,
 		options
 	).addTo(map);
